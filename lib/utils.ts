@@ -21,7 +21,7 @@ export const replaceSpacesWithDash = (inputString: string) => {
 
 export function constructMetadata({
   title = "North Waghi District Development Authority",
-  description = "North Waghi District Website",
+  description = "North Waghi District Official Website",
   image = "/thumbnail.png",
   icons = "/favicon.ico",
   noIndex = false,

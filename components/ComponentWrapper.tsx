@@ -1,7 +1,9 @@
 export default function ComponentWrapper({
   children,
+  className,
 }: Readonly<{
   children: React.ReactNode;
+  className: string;
 }>) {
-  return <main className={`flex flex-col items-center`}>{children}</main>;
+  return <main className={className}>{children}</main>;
 }

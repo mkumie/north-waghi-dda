@@ -3,6 +3,7 @@ import { Icons } from "../Icons";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
+import Search from "../Search";
 
 const Header = () => {
   return (
@@ -21,10 +22,16 @@ const Header = () => {
       </div>
       {/* Mobile Nav */}
       <div className="lg:hidden flex justify-between items-center border-b-2">
-        <Icons.logo height={50} width={50} />
+        <Link href={"/"}>
+          <Icons.logo height={50} width={50} />
+        </Link>
         {/* ToDo: Mobile Nav */}
         <MobileNav />
         <Icons.crest height={70} width={70} />
+      </div>
+      <div className="items-center">
+        {/* ToDo: Search Component */}
+        <Search />
       </div>
     </header>
   );

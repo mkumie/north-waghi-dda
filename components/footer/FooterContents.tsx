@@ -6,17 +6,21 @@ import SiteMap from "./SiteMap";
 import Privacy from "./Privacy";
 import Terms from "./Terms";
 import UsefullLinks from "./UsefullLinks";
+import Legal from "./Legal";
+import About from "./About";
 
 const FooterContents = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-2">
+    // <div className="flex flex-wrap justify-center gap-4 mb-4">
+    <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 mb-4 p-2">
       <ContactInfo />
-      <QuickLinks />
-      <SocialLinks />
+      {/* <QuickLinks /> */}
+      {/* <SocialLinks /> */}
       <SiteMap />
-      <Privacy />
-      <Terms />
+      <Legal />
+      {/* <Terms /> */}
       <UsefullLinks />
+      <About />
     </div>
   );
 };

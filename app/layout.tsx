@@ -4,12 +4,13 @@ import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import { constructMetadata } from "@/lib/utils";
 import Header from "@/components/header/Header";
+import ComponentWrapper from "@/components/ComponentWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = constructMetadata({
   title: "North Waghi DDA",
-  description: "North Waghi District offical website",
+  description: "North Waghi District Offical Website",
 });
 
 export default function RootLayout({
@@ -19,17 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className}`}
-      >
+      <body className={`${inter.className}`}>
         <Header />
-        {children}
+        <ComponentWrapper className="pl-2 pr-2">{children}</ComponentWrapper>
         <Footer />
       </body>
     </html>
   );
 }
-
-
-// border as well as header for mobile nav
-// think of a wrapper or something to do with items-center

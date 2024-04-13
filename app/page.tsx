@@ -3,7 +3,7 @@ import { PictureSlide } from "@/components/PictureSlide";
 
 export default function Home() {
   return (
-    <ComponentWrapper>
+    <ComponentWrapper className="flex flex-col items-center">
       <PictureSlide />
     </ComponentWrapper>
   );
