@@ -1,10 +1,8 @@
 import ComponentWrapper from "@/components/ComponentWrapper";
 import { constructMetadata, toSentenceCase } from "@/lib/utils";
-import { gov_components } from "@/utils";
+import { nav_menus } from "@/utils";
 import { Metadata } from "next";
 import Link from "next/link";
-import React from "react";
-// import { metadata } from "../layout";
 
 export const metadata: Metadata = constructMetadata({
   title: "North Waghi DDA Services",
@@ -12,15 +10,19 @@ export const metadata: Metadata = constructMetadata({
 });
 
 const Government = () => {
+  const gov = nav_menus.filter((menu) => menu.label.href === "/gov");
+
+  const menu = { ...gov }[0];
+
   return (
-    <ComponentWrapper className="flex flex-col items-center gap-4 pl-2 pr-2">
+    <ComponentWrapper className="flex flex-col items-center gap-4">
       <h1 className="font-semibold">
         Government Services in North Waghi District
       </h1>
       <ul className="items-center">
-        {gov_components.map((component, index) => (
-          <li key={index} className="items-center">
-            <Link href={component.href}>{toSentenceCase(component.title)}</Link>
+        {menu.submenu?.map((item) => (
+          <li key={item.title} className="items-center">
+            <Link href={item.href}>{toSentenceCase(item.title)}</Link>
           </li>
         ))}
       </ul>

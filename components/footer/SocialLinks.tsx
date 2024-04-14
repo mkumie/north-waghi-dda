@@ -1,4 +1,5 @@
-import { FacebookIcon, LinkedinIcon, XIcon } from "lucide-react";
+import { LinkedinIcon, XIcon } from "lucide-react";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import React from "react";
 
@@ -11,19 +12,19 @@ const SocialLinks = () => {
           href={"www.facebook.com/northwaghi/"}
           className="border border-cyan-900 p-1"
         >
-          <FacebookIcon color="blue" />
+          <FaFacebook color="blue" size={25} />
         </Link>
         <Link
           href={"www.linkedin.com/northwaghi/"}
           className="border border-cyan-900 p-1"
         >
-          <LinkedinIcon color="#4c4cc3" />
+          <FaLinkedin color="#0A66C2" size={25} />
         </Link>
         <Link
           href={"www.twitter.com/northwaghi/"}
           className="border border-cyan-900 p-1"
         >
-          <XIcon color="#555" />
+          <FaTwitter color="#1D9BF0" size={25} />
         </Link>
       </div>
     </div>
