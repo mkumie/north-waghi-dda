@@ -49,7 +49,9 @@ const MobileNav = () => {
                           // setSelectedMenu(null);
                         }}
                       >
-                        <Link href={submenu.href}>{submenu.title}</Link>
+                        <Link href={submenu.href} className="text-slate-500">
+                          {submenu.title}
+                        </Link>
                       </Button>
                     </div>
                   ))}

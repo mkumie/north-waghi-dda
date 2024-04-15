@@ -10,25 +10,10 @@ import {
 } from "@/components/ui/carousel";
 import { pictures } from "@/utils";
 import Image from "next/image";
-import Autoplay from "embla-carousel-autoplay";
-import useEmblaCarousel, {
-  type UseEmblaCarouselType,
-} from "embla-carousel-react";
 
 export function PictureSlide() {
-  // const [emblaRef, emblaApi] = useEmblaCarousel({
-  //   plugins: [Autoplay({ delay: 2000 })]
-  // })
   return (
-    <Carousel
-      className="w-full max-w-screen-sm"
-      opts={{ align: "center", loop: true }}
-      // plugins={[
-      //   Autoplay({
-      //     delay: 2000,
-      //   }),
-      // ]}
-    >
+    <Carousel className="w-full max-w-xs sm:max-w-3xl">
       <CarouselContent>
         {pictures.map((item, index) => (
           <CarouselItem key={index}>

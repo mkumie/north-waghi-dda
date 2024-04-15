@@ -25,7 +25,6 @@ const Header = () => {
         <Link href={"/"}>
           <Icons.logo height={50} width={50} />
         </Link>
-        {/* ToDo: Mobile Nav */}
         <MobileNav />
         <Icons.crest height={70} width={70} />
       </div>

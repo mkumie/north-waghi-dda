@@ -20,9 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} pl-2 pr-2`}>
         <Header />
-        <ComponentWrapper className="pl-2 pr-2">{children}</ComponentWrapper>
+        {/* <ComponentWrapper className="pl-2 pr-2"> */}
+        {children}
+        {/* </ComponentWrapper> */}
         <Footer />
       </body>
     </html>

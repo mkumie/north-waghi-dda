@@ -3,7 +3,7 @@ export default function ComponentWrapper({
   className,
 }: Readonly<{
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }>) {
   return <main className={className}>{children}</main>;
 }
