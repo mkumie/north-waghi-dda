@@ -22,7 +22,7 @@ const MobileNav = () => {
     <Sheet open={open} onOpenChange={setOpen}>
       {/* Button to trigger opening the mobile sheet menu */}
       <SheetTrigger asChild onClick={() => setSelectedMenu(null)}>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button variant="ghost" size="icon" className="lg:hidden">
           <MenuIcon />
         </Button>
       </SheetTrigger>

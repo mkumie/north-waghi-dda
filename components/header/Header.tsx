@@ -8,7 +8,7 @@ import Search from "../Search";
 const Header = () => {
   return (
     <header className="p-2 pt-0 lg:p-2 lg:pt-0">
-      <div className="hidden md:flex justify-between items-center border-b-2">
+      <div className="hidden lg:flex justify-between items-center border-b-2">
         <Link href={"/"}>
           <Icons.logo height={50} width={50} />
         </Link>
@@ -17,11 +17,11 @@ const Header = () => {
         </h1>
         <Icons.crest height={70} width={70} />
       </div>
-      <div className="hidden md:flex border-b-2">
+      <div className="hidden lg:flex border-b-2">
         <Navbar />
       </div>
       {/* Mobile Nav */}
-      <div className="md:hidden flex justify-between items-center border-b-2">
+      <div className="lg:hidden flex justify-between items-center border-b-2">
         <Link href={"/"}>
           <Icons.logo height={50} width={50} />
         </Link>
