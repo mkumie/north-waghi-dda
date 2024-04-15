@@ -27,7 +27,7 @@ const MobileNav = () => {
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start max-h-[80vh] overflow-y-auto">
           {mobileItems.map((item, index) => (
             <div key={index} className="mb-4">
               <Button
