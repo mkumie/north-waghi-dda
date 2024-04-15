@@ -8,13 +8,15 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col items-center gap-1 text-xs mt-4 border-t-2">
-      <h3 className="font-semibold p-1">District of North Waghi</h3>
+      <h3 className="font-semibold p-1 w-full text-center">
+        District of North Waghi
+      </h3>
       <FooterContents />
       <SocialLinks />
-      <p className="mt-4">
+      <p className="mt-4 w-full text-center">
         &copy;{year} North Waghi District. All rights reserved.
       </p>
-      <p className="text-[0.5rem] mt-4">
+      <p className="text-[0.5rem] mt-4 w-full text-red-600 text-center">
         By{" "}
         <Link href={"https://yhuwheidevs.tech"} target="_blank">
           Yhu Whei Devs
