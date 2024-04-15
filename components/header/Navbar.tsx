@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -25,7 +25,13 @@ import {
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-  const router = useRouter();
+  // const router = useRouter();
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <NavigationMenu className="mx-auto flex flex-row">
@@ -45,10 +51,12 @@ const Navbar = () => {
         {nav_menus.map((component, index) => {
           return (
             <NavigationMenuItem key={index}>
-              <NavigationMenuTrigger>
-                <Link href={component.label.href}>{component.label.title}</Link>
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <Link href={component.label.href}>
+                <NavigationMenuTrigger onClick={handleMenuClick}>
+                  {component.label.title}
+                </NavigationMenuTrigger>
+              </Link>
+              <NavigationMenuContent className={isOpen ? "active" : ""}>
                 <ul className="w-[160px]">
                   {component.submenu?.map((item) => (
                     <ListItem

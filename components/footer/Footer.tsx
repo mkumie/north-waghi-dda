@@ -11,16 +11,19 @@ const Footer = () => {
       <h3 className="font-semibold p-1 w-full text-center">
         District of North Waghi
       </h3>
+      {/* <div className=""> */}
       <FooterContents />
+      {/* </div> */}
       <SocialLinks />
       <p className="mt-4 w-full text-center">
         &copy;{year} North Waghi District. All rights reserved.
       </p>
       <p className="text-[0.5rem] mt-4 w-full text-red-600 text-center">
-        By{" "}
-        <Link href={"https://yhuwheidevs.tech"} target="_blank">
+        By Developer
+        {/* Seek approval for below */}
+        {/* <Link href={"https://yhuwheidevs.tech"} target="_blank">
           Yhu Whei Devs
-        </Link>
+        </Link> */}
       </p>
     </footer>
   );

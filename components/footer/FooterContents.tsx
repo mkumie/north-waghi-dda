@@ -11,8 +11,7 @@ import About from "./About";
 
 const FooterContents = () => {
   return (
-    // <div className="flex flex-wrap justify-center gap-4 mb-4">
-    <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 mb-4 p-2">
+    <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 mb-4 sm:container sm:justify-around">
       <ContactInfo />
       {/* <QuickLinks /> */}
       {/* <SocialLinks /> */}
