@@ -26,8 +26,15 @@ const MobileNav = () => {
           <MenuIcon />
         </Button>
       </SheetTrigger>
+
       <SheetContent side="left">
         <div className="flex flex-col items-start max-h-[80vh] overflow-y-auto">
+          <div className="mb-4">
+            <Button variant="link" onClick={() => setOpen(false)}>
+              <Link href={"/"}>Home</Link>
+            </Button>
+          </div>
+
           {mobileItems.map((item, index) => (
             <div key={index} className="mb-4">
               <Button
