@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export function PictureSlide() {
   return (
-    <Carousel className="w-auto max-w-xs sm:max-w-3xl">
+    <Carousel className="max-w-xs sm:max-w-2xl">
       <CarouselContent>
         {pictures.map((item, index) => (
           <CarouselItem key={index}>

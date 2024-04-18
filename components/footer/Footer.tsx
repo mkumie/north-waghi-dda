@@ -7,7 +7,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col items-center gap-1 text-xs mt-4 border-t-2">
+    <footer className="flex flex-col items-center gap-1 text-xs mt-4 border-t-2 min-w-fit">
       <h3 className="font-semibold p-1 w-full text-center">
         District of North Waghi
       </h3>
