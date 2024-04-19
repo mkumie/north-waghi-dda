@@ -33,3 +33,6 @@ export function PictureSlide() {
     </Carousel>
   );
 }
+
+// needs more fine tuning to suit some small devices
+// research auto fit
