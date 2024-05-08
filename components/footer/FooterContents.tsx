@@ -8,6 +8,7 @@ import Terms from "./Terms";
 import UsefullLinks from "./UsefullLinks";
 import Legal from "./Legal";
 import About from "./About";
+import Contact from "./Contact";
 
 const FooterContents = () => {
   return (
@@ -17,9 +18,9 @@ const FooterContents = () => {
       {/* <SocialLinks /> */}
       <SiteMap />
       <Legal />
-      {/* <Terms /> */}
       <UsefullLinks />
       <About />
+      {/* <Contact /> */}
     </div>
   );
 };

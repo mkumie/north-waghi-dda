@@ -97,7 +97,7 @@ const nav_menus: { label: Label; submenu?: Submenu[] }[] = [
     submenu: [
       {
         title: "Local Businesses and Commerce",
-        href: "/community/local",
+        href: "/community/local-businesses",
       },
       {
         title: "Transportation Options",
@@ -129,7 +129,7 @@ const nav_menus: { label: Label; submenu?: Submenu[] }[] = [
       },
       {
         title: "Announcements",
-        href: "/updates/announcement",
+        href: "/updates/announcements",
       },
       {
         title: "Events Calendar",

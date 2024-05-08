@@ -30,6 +30,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// work on footer texts overlapping to next line, research + sort
-// before moving on...

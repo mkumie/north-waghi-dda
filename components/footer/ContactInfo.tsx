@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 
 const ContactInfo = () => {
   return (
@@ -7,8 +8,7 @@ const ContactInfo = () => {
       <p>Post Office Box 1110</p>
       <p>Banz, Jiwaka Province</p>
       <br />
-      <p>Phone: 12345678</p>
-      <p>Email: enquiry@northwaghi.gov.pg</p>
+      <Contact />
     </div>
   );
 };

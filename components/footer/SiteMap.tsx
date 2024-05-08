@@ -12,7 +12,7 @@ const SiteMap = () => {
         <Link href={"/community"}>Community Resources</Link>
       </p>
       <p>
-        <Link href={"/news"}>News and Updates</Link>
+        <Link href={"/updates"}>News and Updates</Link>
       </p>
       <p>
         <Link href={"/engage"}>Engagement and Participation</Link>
